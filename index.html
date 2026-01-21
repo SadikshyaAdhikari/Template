@@ -19,7 +19,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-
+/* a{
+    color: red;
+    background-color:rgb(136, 20, 20);
+} */
 table {
     border-collapse: collapse;
     mso-table-lspace: 0pt;
@@ -38,14 +41,14 @@ img {
     width: 100%;
     table-layout: fixed;
     background-color: #f3f4f6;
-    padding: 2.5rem 0; /* 40px */
+    padding: 2.5rem 0; 
 }
 
 .container {
-    width: 37.5rem; /* 600px */
+    width: 37.5rem; 
     margin: 0 auto;
     background-color: #ffffff;
-    border-radius: 1.5rem; /* 24px */
+    border-radius: 1.5rem; 
     overflow: hidden;
     box-shadow:
         0 1.25rem 1.5625rem -0.3125rem rgba(0, 0, 0, 0.04),
@@ -55,42 +58,41 @@ img {
 /* Typography */
 .h1 {
     color: #111827;
-    font-size: 1.5625rem; /* 25px */
+    font-size: 1.5625rem; 
     font-weight: 600;
     line-height: 1.2;
-    margin: 0 0 0.625rem 0; /* 10px */
+    margin: 0 0 0.625rem 0; 
     letter-spacing: -0.025em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .p {
     color: #3b4450;
-    font-size: 1rem; /* 16px */
+    font-size: 1rem; 
     line-height: 1.6;
-    margin: 0 0 1.5rem 0; /* 24px */
+    margin: 0 0 1.5rem 0; 
 }
 
 /* Button */
-.btn-wrapper {
-    margin: 2.5rem 0; /* 40px */
-    display: flex;
-    justify-content: center;
-}
+
 
 .btn-primary {
     background-color: #154069;
     color: #ffffff !important;
-    padding: 0.625rem 1.625rem; /* 10px 26px */
+    padding: 0.625rem 1.625rem; 
     text-decoration: none;
-    border-radius: 0.75rem; /* 12px */
+    border-radius: 0.75rem; 
     font-weight: 600;
-    font-size: 1rem; /* 16px */
+    font-size: 1rem; 
     display: inline-block;
+    justify-content: center;
+    margin: 2rem ; 
+
 }
 
 /* Sections */
 .header {
-    padding: 1.875rem 1.25rem 0; /* 30px 20px 0 */
+    padding: 1.875rem 1.25rem 0; 
     text-align: center;
 }
 
@@ -103,7 +105,7 @@ img {
 }
 
 .header h2 {
-    padding-bottom: 1.625rem; /* 26px */
+    padding-bottom: 1.625rem; 
     margin-top: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
@@ -111,7 +113,7 @@ img {
 }
 
 .content {
-    padding: 0 2.5rem; /* 40px */
+    padding: 0 2.5rem; 
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -119,66 +121,67 @@ img {
 /* App Download Section */
 .app-drawer {
     background-color: #ffffff;
-    padding: 1.25rem 2.5rem; /* 20px 40px */
+    padding: 1.25rem 2.5rem; 
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .app-badge {
-    height: 3.75rem; /* 60px */
-    margin: 0.125rem; /* 2px */
+    height: 3.75rem; 
+    margin: 0.125rem;
     vertical-align: middle;
     transition: transform 0.2s;
 }
 
+
 /* Footer */
 .footer {
-    padding: 3rem 2.5rem; /* 48px 40px */
-    margin: 0.9375rem 0; /* 15px */
+    padding: 3rem 2.5rem; 
+    margin: 0.9375rem 0; 
     text-align: center;
 }
 
 .social-app {
-    margin: 1.25rem 1.25rem 0; /* 20px */
+    margin: 1.25rem 1.25rem 0; 
 }
 
 .social-icon {
     display: inline-block;
-    margin: 0.375rem 0.5rem; /* 6px 8px */
+    margin: 0.375rem 0.5rem; 
 }
 
 .social-icon img {
-    width: 2rem; /* 32px */
+    width: 2rem; 
     height: 2rem;
 }
 
 .line {
     width: 60%;
-    height: 0.0625rem; /* 1px */
+    height: 0.0625rem; 
     background: #000;
 }
 
 .legal-text {
     color: #262d39;
-    font-size: 0.875rem; /* 14px */
+    font-size: 0.875rem; 
     line-height: 1.8;
 }
 
 /* Responsive */
-@media screen and (max-width: 37.5rem) { /* 600px */
+@media screen and (max-width: 37.5rem) { 
     .container {
         width: 100% !important;
         border-radius: 0 !important;
     }
 
     .h1 {
-        font-size: 1.625rem !important; /* 26px */
+        font-size: 1.625rem !important; 
     }
 
     .header,
     .content,
     .app-drawer {
-        padding: 2rem 1.5rem !important; /* 32px 24px */
+        padding: 2rem 1.5rem !important; 
     }
 }
 </style>
@@ -214,7 +217,7 @@ img {
                                         <p class="p">Welcome to the premium tier of your productivity suite. We've refined every interaction to ensure that your focus remains on high-impact tasks, while we handle the complexity in the background.</p>
                                         
                                         <div class="btn-wrapper">
-                                            <a href="https://demo.palikaportal.com/" class="btn-primary" title="Launch Dashboard">Go to My Palika</a>
+                                            <a href="https://demo.palikaportal.com/" class="btn-primary" title="Launch Dashboard" target="_blank">Go to My Palika</a>
                                         </div>
                                         
                                     </td>
@@ -234,23 +237,25 @@ img {
     <tr>
         <td align="center" class="social-app" style="padding: 16px 0;">
             <p style="margin:0; color:#111827; font-size:0.9375rem; font-weight:500;">Stay Connected With Us</p>
-            <a href="#" class="social-icon" title="Facebook"><img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="Facebook"></a>
-            <a href="#" class="social-icon" title="LinkedIn"><img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="LinkedIn"></a>
-            <a href="#" class="social-icon" title="Instagram"><img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram"></a>
-            <a href="#" class="social-icon" title="Twitter"><img src="https://img.icons8.com/?size=100&id=ClbD5JTFM7FA&format=png&color=000000" alt="Twitter"></a>
+            <a href="#" class="social-icon" title="Facebook" target="_blank"><img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="Facebook"></a>
+
+            <a href="#" class="social-icon" title="LinkedIn" target="_blank"><img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="LinkedIn"></a>
+
+            <a href="#" class="social-icon" title="Instagram" target="_blank"><img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram"></a>
+
+            <a href="#" class="social-icon" title="Twitter" target="_blank"><img src="https://img.icons8.com/?size=100&id=ClbD5JTFM7FA&format=png&color=000000" alt="Twitter"></a>
         </td>
     </tr>
 
     <!-- App Download -->
-    <tr>
+    <tr >
         <td align="center" class="app-drawer" style="padding: 16px 0;">
             <p style="margin:0; color:#111827; font-size:0.9375rem; font-weight:500;">Get Our App From Here</p>
-            <a href="https://apps.apple.com/np/app/my-palika/id6497230568" title="App Store">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY_o-G9mMFogqWSeYzzRALpqqr8E-pvKn39w&s" alt="App Store" class="app-badge">
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.cliffbyte.mypalika" title="Google Play">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSADMTEo4YEurEn-gXFBOfumKYAJMviq-T9ww&s" alt="Google Play" class="app-badge">
-            </a>
+          
+
+             <a href="https://apps.apple.com/np/app/my-palika/id6497230568"  title="App Store" target="_blank"><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY_o-G9mMFogqWSeYzzRALpqqr8E-pvKn39w&s" alt="App Store" class="app-badge"></a>
+
+            <a href="https://play.google.com/store/apps/details?id=com.cliffbyte.mypalika" title="Google Play" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSADMTEo4YEurEn-gXFBOfumKYAJMviq-T9ww&s" alt="Google Play" class="app-badge"></a>
         </td>
     </tr>
 </table>
@@ -273,7 +278,7 @@ img {
                                        This email was generated automatically. For inquiries or assistance, please contact us.
 
 <br>
-                                        <a href="https://demo.palikaportal.com/privacy-policy" style="color: #262d39; text-decoration: underline;" title="Read our privacy policy" class="privacy-policy">Privacy Policy</a>
+                                        <a href="https://demo.palikaportal.com/privacy-policy" style="color: #262d39; text-decoration: underline;" title="Read our privacy policy" class="privacy-policy" target="_blank">Privacy Policy</a>
                                     </p>
                                 </td>
                             </tr>
